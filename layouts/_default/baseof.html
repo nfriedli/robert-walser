@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="{{ .Lang }}">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ block "title" . }}{{ .Title }} &bull; {{ .Site.Title }}{{ end }}</title>
-    {{ with .Description }}<meta name="description" content="{{ . }}">{{ end }}
+    {{ with .Description }}
+    <meta name="description" content="{{ . }}">{{ end }}
     <link rel="canonical" href="{{ .Permalink }}">
     {{ if .IsTranslated }}
     {{ range .Translations }}
@@ -13,7 +15,8 @@
     {{ end }}
     {{ hugo.Generator }}
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
     <style>
         html {
             background: #FFF;
@@ -22,45 +25,66 @@
             font-size: 100%;
             line-height: 1.5;
         }
+
         body {
             margin: 2rem auto;
             max-width: 60ch;
             padding: 1rem;
         }
 
-        body > * + *,
-        main > * + * {
-          margin-top: 2rem;
+        body>*+*,
+        main>*+* {
+            margin-top: 2rem;
         }
 
         iframe {
             max-width: 100%;
         }
+
+        header,
+        footer {
+            background: #edd;
+        }
+
+        nav {
+            background: #ded;
+        }
+
+        .breadcrumb {
+            background: #dee
+        }
     </style>
-  </head>
-  <body>
-      <header>{{ .Site.Title }}</header>
+</head>
 
-      {{ $current := .}}
-      {{ $lang := .Language}}
-      <nav id="main">
+<body>
+    <header>{{ .Site.Title }}</header>
+
+    {{ $current := .}}
+    {{ $lang := .Language}}
+    <nav id="main">
         <ul>
-           {{ if .Translations }}
+            {{ if .Translations }}
             {{ range .AllTranslations }}
-            <li><a  href="{{ .Permalink }}" title="{{ .Title }}" hreflang="{{ .Language.Lang }}" class="lang {{ if eq $lang .Language }} on{{end}}">{{ .Language.LanguageName }}</a></li>
+            <li><a href="{{ .Permalink }}" title="{{ .Title }}" hreflang="{{ .Language.Lang }}"
+                    class="lang {{ if eq $lang .Language }} on{{end}}">{{ .Language.LanguageName }}</a></li>
             {{ end}}
-          {{ end }}
+            {{ end }}
         </ul>
-      </nav>
+    </nav>
 
-      <main>{{ block "main" . }}{{ end }}</main>
-      <footer>
-          <ul>
-          {{ range .Site.AllPages }}
+    <main>{{ block "main" . }}{{ end }}</main>
+
+    <nav>
+        <ul>
+            {{ range .Site.AllPages }}
             <li><a href="{{ .Permalink }}" hreflang="{{ .Lang }}">{{ .Title }}</a>: {{ .RelPermalink }}</li>
-          {{ end }}
+            {{ end }}
         </ul>
-          {{ .Site.Params.footer | markdownify }}
+    </nav>
+
+    <footer>
+        {{ .Site.Params.footer | markdownify }}
     </footer>
-  </body>
+</body>
+
 </html>
