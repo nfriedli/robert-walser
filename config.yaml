@@ -8,7 +8,7 @@ languages:
   de:
     contentDir: content/de
     title: Robert Walser in Biel
-    languageName: Deutsch 🇩🇪
+    languageName: Deutsch
     weight: 1
     params:
       footer: |
@@ -16,7 +16,7 @@ languages:
   fr:
     contentDir: content/fr
     title: Robert Walser à Bienne
-    languageName: Français 🇫🇷
+    languageName: Français
     weight: 2
     params:
       footer: |
