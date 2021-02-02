@@ -1,3 +1,3 @@
 ---
-title: 2e station
+title: Station 2
 ---

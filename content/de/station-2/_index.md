@@ -1,3 +1,3 @@
 ---
-title: 2. Station
+title: Station 2
 ---
