@@ -1,5 +1,14 @@
 {{ define "main" }}
 {{ partial "breadcrumb" . }}
 <h1>{{ .Title }}</h1>
+
+{{ with .Parent }}
+<ul class="tabs">
+    {{ range .Pages }}
+        <li><a href="{{ .Permalink }}">{{ .Title | markdownify }}</a></li>
+    {{ end }}
+    </ul>
+{{ end }}
+
 {{ .Content }}
 {{ end }}

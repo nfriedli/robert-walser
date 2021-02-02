@@ -3,9 +3,10 @@
 <h1>{{ .Title }}</h1>
 {{ .Content }}
 
+
 <ul class="tabs">
 {{ range .Pages }}
-    <li><a href="{{ .Permalink }}">{{ .Title | markdownify }}</a></li>
+    <li class="on"><a href="{{ .Permalink }}">{{ .Title | markdownify }}</a></li>
 {{ end }}
 </ul>
 

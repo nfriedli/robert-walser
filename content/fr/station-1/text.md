@@ -1,5 +1,5 @@
 ---
-title: "Extrait textuel: La chambre d’enfants"
+title: Texte
 address:
     street: Rue de Nidau 36
     city: Bienne
