@@ -1,0 +1,36 @@
+baseURL: https://robert-walser.netlify.app/
+title: Balade Robert Walser
+
+defaultContentLanguage: fr
+defaultContentLanguageInSubdir: true
+
+languages:
+  de:
+    contentDir: content/de
+    title: Robert Walser in Biel
+    languageName: Deutsch 🇩🇪
+    weight: 1
+    params:
+      footer: |
+        Robbie kommt zurück in Biou.
+  fr:
+    contentDir: content/fr
+    title: Robert Walser à Bienne
+    languageName: Français 🇫🇷
+    weight: 2
+    params:
+      footer: |
+        Relancer la balade RW à Bienne.
+
+disableKinds:
+  - taxonomy
+  - term
+  - RSS
+  - sitemap
+  - robotsTXT
+  - 404
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
