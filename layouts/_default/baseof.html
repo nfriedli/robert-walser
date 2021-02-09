@@ -28,7 +28,7 @@
 
         body {
             margin: 2rem auto;
-            max-width: 60ch;
+            max-width: 70ch;
             padding: 1rem;
         }
 
@@ -85,6 +85,16 @@
             background: #dee
         }
 
+        figure {
+            margin: 2rem 0;
+        }
+
+        img {
+            display: block;
+            margin: auto;
+            max-width: 100%;
+        }
+
     </style>
 </head>
 
@@ -105,14 +115,6 @@
     </nav>
 
     <main>{{ block "main" . }}{{ end }}</main>
-
-    <nav>
-        <ul>
-            {{ range .Site.AllPages }}
-            <li><a href="{{ .Permalink }}" hreflang="{{ .Lang }}">{{ .Title }}</a>: {{ .RelPermalink }}</li>
-            {{ end }}
-        </ul>
-    </nav>
 
     <footer>
         {{ .Site.Params.footer | markdownify }}
