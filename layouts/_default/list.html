@@ -6,7 +6,7 @@
 
 <ul class="tabs">
 {{ range .Pages }}
-    <li class="on"><a href="{{ .Permalink }}">{{ .Title | markdownify }}</a></li>
+    <li><a href="{{ .Permalink }}">{{ .Title | markdownify }}</a></li>
 {{ end }}
 </ul>
 
