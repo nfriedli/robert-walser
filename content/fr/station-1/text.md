@@ -1,5 +1,6 @@
 ---
 title: Texte
+weight: 1
 ---
 
 Extrait de *Les enfants Tanner*
