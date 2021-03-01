@@ -4,6 +4,7 @@
 
 {{ with .Parent }}
 <ul class="tabs">
+        <li><a href="{{ .Permalink }}">{{ .Title | markdownify }}</a></li>
     {{ range .Pages }}
         <li><a href="{{ .Permalink }}">{{ .Title | markdownify }}</a></li>
     {{ end }}
@@ -11,4 +12,11 @@
 {{ end }}
 
 {{ .Content }}
+
+{{ with .Params.next }}
+<div class="next">
+    <a href="{{ . }}">Suite</a>
+</div>
+{{ end }}
+
 {{ end }}
