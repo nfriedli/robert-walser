@@ -20,7 +20,7 @@ languages:
     weight: 2
     params:
       footer: |
-        Relancer la balade RW à Bienne.
+        Un projet de la ville de Bienne
 
 disableKinds:
   - taxonomy
