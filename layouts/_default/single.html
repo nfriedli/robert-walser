@@ -2,13 +2,29 @@
 {{ partial "breadcrumb" . }}
 <h1>{{ .Title }}</h1>
 
+{{ $current := .}}
+
 {{ with .Parent }}
-<ul class="tabs">
-        <li><a href="{{ .Permalink }}">{{ .Title | markdownify }}</a></li>
-    {{ range .Pages }}
-        <li><a href="{{ .Permalink }}">{{ .Title | markdownify }}</a></li>
-    {{ end }}
+<div class="tabs-selector">
+    <ul class="tabs">
+        <li class="tabs-item {{ if eq $current . }}active{{ end }}">
+            <a href="{{ .Permalink }}">
+                <div class="tabs-item-text">
+                    {{ .Title | markdownify }}
+                </div>
+            </a>
+        </li>
+        {{ range .Pages }}
+            <li class="tabs-item {{ if eq $current . }}active{{ end }}">
+                <a href="{{ .Permalink }}">
+                    <div class="tabs-item-text">
+                       {{ .Title | markdownify }}
+                    </div>
+                </a>
+            </li>
+        {{ end }}
     </ul>
+</div>
 {{ end }}
 
 {{ .Content }}

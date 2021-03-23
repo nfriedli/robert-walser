@@ -7,9 +7,11 @@
     </h1>
 </div>
 
+{{ $current := .}}
+
 <div class="tabs-selector">
     <ul class="tabs">
-        <li class="tabs-item">
+        <li class="tabs-item {{ if eq $current . }}active{{ end }}">
             <a href="{{ .Permalink }}">
                 <div class="tabs-item-text">
                     {{ .Title | markdownify }}
@@ -17,7 +19,7 @@
             </a>
         </li>
         {{ range .Pages }}
-            <li class="tabs-item">
+            <li class="tabs-item {{ if eq $current . }}active{{ end }}">
                 <a href="{{ .Permalink }}">
                     <div class="tabs-item-text">
                        {{ .Title | markdownify }}
