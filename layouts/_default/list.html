@@ -1,14 +1,35 @@
 {{ define "main" }}
 {{ partial "breadcrumb" . }}
-<h1>{{ .Title }}</h1>
 
-<ul class="tabs">
-    <li><a href="{{ .Permalink }}">{{ .Title | markdownify }}</a></li>
-{{ range .Pages }}
-    <li><a href="{{ .Permalink }}">{{ .Title | markdownify }}</a></li>
-{{ end }}
-</ul>
+<div class="title">
+    <h1 class="h1">
+        {{ .Title }}
+    </h1>
+</div>
 
-{{ .Content }}
+<div class="tabs-selector">
+    <ul class="tabs">
+        <li class="tabs-item">
+            <a href="{{ .Permalink }}">
+                <div class="tabs-item-text">
+                    {{ .Title | markdownify }}
+                </div>
+            </a>
+        </li>
+        {{ range .Pages }}
+            <li class="tabs-item">
+                <a href="{{ .Permalink }}">
+                    <div class="tabs-item-text">
+                       {{ .Title | markdownify }}
+                    </div>
+                </a>
+            </li>
+        {{ end }}
+    </ul>
+</div>
+
+<div class="content">
+    {{ .Content }}
+</div>
 
 {{ end }}

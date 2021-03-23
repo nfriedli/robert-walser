@@ -1,8 +1,19 @@
 {{ define "breadcrumb" }}
     {{ with .Parent }}
         {{ template "breadcrumb" . }}
-        <a href="{{ .Permalink }}">{{.Title}}</a> »
+        <a href="{{ .Permalink }}">
+            <span class="breadcrumb-item">
+                {{.Title}}
+            </span>
+        </a>
+        <span class="breadcrumb-separator">
+            »
+        </span>
     {{ end }}
 {{ end }}
 
-<div class="breadcrumb">{{ template "breadcrumb" . }} {{ .Title }}</div>
+<div class="breadcrumb">{{ template "breadcrumb" . }} 
+    <span class="breadcrumb-item">
+        {{ .Title }}
+    </span>
+</div>

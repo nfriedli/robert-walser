@@ -20,26 +20,46 @@
 </head>
 
 <body>
-    <header>{{ .Site.Title }}</header>
-
-    {{ $current := .}}
-    {{ $lang := .Language}}
-    <nav class="main">
-        <ul>
-            {{ if .Translations }}
-            {{ range .AllTranslations }}
-            <li><a href="{{ .Permalink }}" title="{{ .Title }}" hreflang="{{ .Language.Lang }}"
-                    class="lang {{ if eq $lang .Language }} on{{end}}">{{ .Language.LanguageName }}</a></li>
-            {{ end}}
-            {{ end }}
-        </ul>
-    </nav>
-
-    <main>{{ block "main" . }}{{ end }}</main>
-
+    <header class="header">
+        <span>
+            {{ .Site.Title }}
+        </span>
+        <span>
+            iconHome
+        </span>
+    </header>
+    <section class="language-selector">
+        {{ $current := .}}
+        {{ $lang := .Language}}
+        <nav class="main">
+            <ul class="lang">
+                {{ if .Translations }}
+                    {{ range .AllTranslations }}
+                        <li class="lang-item {{ if eq $lang .Language }} active{{end}}">
+                            <a href="{{ .Permalink }}" title="{{ .Title }}" hreflang="{{ .Language.Lang }}">
+                                <div class="lang-item-text" >
+                                    {{ .Language.LanguageName }}
+                                </div>
+                            </a>
+                        </li>
+                    {{ end}}
+                {{ end }}
+            </ul>
+        </nav>
+    </section>
+    <main>
+        {{ block "main" . }}{{ end }}
+    </main>
     <footer>
-        {{/* Le texte se trouve dans le fichier de configuration principal */}}
-        {{ .Site.Params.footer | markdownify }}
+        <div class="row">
+            <div class="col">
+                {{/* Le texte se trouve dans le fichier de configuration principal */}}
+                {{ .Site.Params.footer | markdownify }}
+            </div>
+            <div class="col">
+
+            </div>
+        </div>
     </footer>
 </body>
 
