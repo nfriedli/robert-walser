@@ -1,0 +1,56 @@
+/*!------------------------------------------------------------------
+[TAB-SELECTOR STYLESHEET]
+PROJECT:	Robert Walser
+VERSION:	0.0.1
+-------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------
+[TABLE OF CONTENTS]
+-------------------------------------------------------------------*/
+
+.tabs-selector {
+    .tabs {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 0;
+        padding: 0;
+    }
+
+    .tabs-item {
+        flex-grow: 0;
+        margin: $btn-margin;
+        @if $radius == 0 {
+            margin-bottom: 0;
+        } @else {
+            margin-bottom: $margin;
+          }
+        
+        list-style-type: none;
+
+        .tabs-item-text {
+            color: $btn-color;
+            padding:$btn-padding;
+            border-color: $btn-border-color;
+            border-width: $btn-border-width;
+            border-radius: $btn-border-radius;
+            text-align: center;
+            background-color: $main-primary-color;
+        }
+
+        .active {
+            background-color: $main-primary-color;
+        }
+
+        &:hover {
+            .tabs-item-text {
+                background-color: $btn-bg-color-hover;
+                color: $btn-color-active;
+            }
+        }
+    }
+
+    a {
+        text-decoration: none;
+    }
+}

@@ -1,0 +1,26 @@
+/*!------------------------------------------------------------------
+[BREADCRUMB STYLESHEET]
+PROJECT:	Robert Walser
+VERSION:	0.0.1
+-------------------------------------------------------------------*/
+
+/************************************** breadcrumb **************************************/
+
+.breadcrumb {
+    font-weight: bold;
+    text-transform: uppercase;
+    color: $black;
+    margin: $padding-vertical 0;
+}
+
+
+.breadcrumb-item {
+    font-weight: 300;
+    text-decoration:none;
+    color: $black;
+
+    &.active {
+        font-weight: light;
+        color: $black;
+    }
+}

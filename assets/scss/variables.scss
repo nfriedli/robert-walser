@@ -1,0 +1,62 @@
+/*!------------------------------------------------------------------
+[VARIABLES STYLESHEET]
+PROJECT:	Robert Walser
+VERSION:	0.0.1
+-------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------
+[TABLE OF CONTENTS]
+-------------------------------------------------------------------*/
+
+// Fonts
+$font-family: Roboto, sans-serif;
+$code-font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;
+$line-height: 1.2;
+$main-font-size: 1em;
+
+// Colors
+$main-primary-color: #D660AD !default;
+$main-primary-color-opacity: rgba($main-primary-color, .2);
+$text-primary-color: #707070 !default;
+$bg-header-color: $main-primary-color;
+$bg-content-color: rgba($main-primary-color, .2);
+
+$white: #FFF !default;
+$black: #000 !default;
+$grey: #9F9F9F !default;
+
+// margin, padding, radius
+$margin: .5em;
+$margin-vertical: .5em;
+$margin-horizontal: 1em;
+
+$padding: .5em;
+$padding-vertical: .5em;
+$padding-horizontal: 1em;
+$radius: 20px;
+
+
+/* language */
+$language-bg-bt-color: $grey;
+$language-bg-bt-color-active: $main-primary-color;
+$language-bg-bt-color-opacity: rgba($language-bg-bt-color-active, .2);
+$language-bt-color: $white;
+$language-bt-padding: .5em;
+$language-bt-radius: $radius;
+$language-btn-border-width: 2px;
+$language-margin: $margin;
+
+/* boutons */
+$btn-color: $white;
+$btn-color-active: $main-primary-color;
+$btn-bg-color: $main-primary-color;
+$btn-padding: $padding-vertical $padding-horizontal;
+$btn-margin: 2px;
+$btn-border-color: $main-primary-color;
+$btn-border-width: 2px;
+$btn-border-radius: $radius;
+
+/* boutons hover */
+$btn-bg-color-hover: $main-primary-color-opacity;
+$btn-border-color-hover: $main-primary-color-opacity;
+
