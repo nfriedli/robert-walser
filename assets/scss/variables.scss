@@ -15,15 +15,15 @@ $line-height: 1.2;
 $main-font-size: 1em;
 
 // Colors
-$main-primary-color: #D660AD !default;
+$main-primary-color: #DD4799 !default;
 $main-primary-color-opacity: rgba($main-primary-color, .2);
-$text-primary-color: #707070 !default;
+$text-primary-color: $main-primary-color !default;
 $bg-header-color: $main-primary-color;
 $bg-content-color: rgba($main-primary-color, .2);
 
 $white: #FFF !default;
 $black: #000 !default;
-$grey: #9F9F9F !default;
+$grey: #C9C5D1 !default;
 
 // margin, padding, radius
 $margin: .5em;
@@ -47,8 +47,9 @@ $language-btn-border-width: 2px;
 $language-margin: $margin;
 
 /* boutons */
-$btn-color: $white;
+$btn-color: $main-primary-color;
 $btn-color-active: $main-primary-color;
+$btn-color-inactive: $white;
 $btn-bg-color: $main-primary-color;
 $btn-padding: $padding-vertical $padding-horizontal;
 $btn-margin: 2px;
@@ -56,7 +57,10 @@ $btn-border-color: $main-primary-color;
 $btn-border-width: 2px;
 $btn-border-radius: $radius;
 
+$btn-bg-color-actif: $main-primary-color-opacity;
+
 /* boutons hover */
 $btn-bg-color-hover: $main-primary-color-opacity;
+
 $btn-border-color-hover: $main-primary-color-opacity;
 

@@ -24,12 +24,12 @@ VERSION:	0.0.1
             margin-bottom: 0;
         } @else {
             margin-bottom: $margin;
-          }
+        }
         
         list-style-type: none;
 
         .tabs-item-text {
-            color: $btn-color;
+            color: $btn-color-inactive;
             padding:$btn-padding;
             border-color: $btn-border-color;
             border-width: $btn-border-width;
@@ -38,8 +38,12 @@ VERSION:	0.0.1
             background-color: $main-primary-color;
         }
 
-        .active {
-            background-color: $main-primary-color;
+        &.active {
+            
+            .tabs-item-text {
+                background-color: $btn-bg-color-actif;
+                color: $btn-color;
+            }
         }
 
         &:hover {
