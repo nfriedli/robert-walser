@@ -9,6 +9,11 @@ VERSION:	0.0.1
 -------------------------------------------------------------------*/
 
 .tabs-selector {
+    @if $radius != 0 {
+        padding: 0 ($padding-horizontal * 1.5);
+        margin-bottom: $margin-vertical;
+    }
+
     .tabs {
         display: flex;
         flex-direction: row;
@@ -18,13 +23,14 @@ VERSION:	0.0.1
     }
 
     .tabs-item {
-        flex-grow: 0;
+        flex-grow: 3;
         margin: $btn-margin;
         @if $radius == 0 {
             margin-bottom: 0;
         } @else {
             margin-bottom: $margin;
         }
+        text-transform: $bt-transform;
         
         list-style-type: none;
 
@@ -36,6 +42,7 @@ VERSION:	0.0.1
             border-radius: $btn-border-radius;
             text-align: center;
             background-color: $main-primary-color;
+            font-size: $bt-font-size;
         }
 
         &.active {

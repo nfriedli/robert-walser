@@ -13,6 +13,7 @@ $font-family: Roboto, sans-serif;
 $code-font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;
 $line-height: 1.2;
 $main-font-size: 1em;
+$secondary-font-size: .75em;
 
 // Colors
 $main-primary-color: #DD4799 !default;
@@ -35,16 +36,7 @@ $padding-vertical: .5em;
 $padding-horizontal: 1em;
 $radius: 20px;
 
-
-/* language */
-$language-bg-bt-color: $grey;
-$language-bg-bt-color-active: $main-primary-color;
-$language-bg-bt-color-opacity: rgba($language-bg-bt-color-active, .2);
-$language-bt-color: $white;
-$language-bt-padding: .5em;
-$language-bt-radius: $radius;
-$language-btn-border-width: 2px;
-$language-margin: $margin;
+$breadcrumb-font-size: $secondary-font-size;
 
 /* boutons */
 $btn-color: $main-primary-color;
@@ -56,6 +48,21 @@ $btn-margin: 2px;
 $btn-border-color: $main-primary-color;
 $btn-border-width: 2px;
 $btn-border-radius: $radius;
+$bt-transform: uppercase;
+$bt-font-size: $secondary-font-size;
+
+
+/* language */
+$language-bg-bt-color: $grey;
+$language-bg-bt-color-active: $main-primary-color;
+$language-bg-bt-color-opacity: rgba($language-bg-bt-color-active, .2);
+$language-bt-color: $white;
+$language-bt-padding: .5em;
+$language-bt-radius: $radius;
+$language-btn-border-width: 2px;
+$language-margin: $margin;
+$language-bt-transform: $bt-transform;
+$language-bt-font-size: $secondary-font-size;
 
 $btn-bg-color-actif: $main-primary-color-opacity;
 

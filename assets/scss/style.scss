@@ -18,7 +18,7 @@ body {
 
 header, .header {
     font-size: 1.5em;
-    padding: .3em;
+    padding: .3em $padding-horizontal;
     color: $white;
     background-color: $bg-header-color;
     font-weight: normal;
@@ -27,6 +27,7 @@ header, .header {
 
 footer, .footer {
     background: $white;
+    padding: .3em ($padding-horizontal * 1.5);
 }
 
 iframe {

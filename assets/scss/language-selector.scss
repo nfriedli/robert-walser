@@ -9,12 +9,17 @@ VERSION:	0.0.1
 -------------------------------------------------------------------*/
 
 .language-selector {
+    @if $radius != 0 {
+        padding: .3em $padding-horizontal;
+    }
+
     .main {
         .lang {
             display: flex;
             flex-direction: row;
             margin: 0;
             padding: 0;
+            font-size: $language-bt-font-size;
 
             .lang-item {
                 list-style-type: none;
@@ -23,12 +28,15 @@ VERSION:	0.0.1
                 text-align: center;
                 background-color: $language-bg-bt-color;
                 border-radius:$language-bt-radius;
-                margin:  $language-margin;
+                @if $radius != 0 {
+                    margin:  $language-margin;
+                }
                 border-width:$language-btn-border-width;
 
                 .lang-item-text {
                     padding: $language-bt-padding;
                     color: $language-bt-color;
+                    text-transform: $language-bt-transform;
                 }
 
                 &.active {
