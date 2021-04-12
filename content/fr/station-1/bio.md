@@ -1,6 +1,6 @@
 ---
 title: Vie et œuvre
-wieght: 3
+weight: 3
 ---
 
 Robert Walser [ 1878-1956 ] fait partie des écrivains les plus énigmatiques de son

@@ -1,6 +1,6 @@
 ---
 title: Leben und Werk
-wieght: 3
+weight: 3
 ---
 
 Robert Walser [ 1878-1956 ] gehört zu den rätselhaftesten Schriftstellern seiner

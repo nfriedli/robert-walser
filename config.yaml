@@ -15,7 +15,7 @@ languages:
     weight: 1
     params:
       footer: |
-        Robbie kommt zurück in Biou.
+        Eine Projekt von Stadt Biel / Christine Schranz
   fr:
     contentDir: content/fr
     title: Robert Walser à Bienne
@@ -23,7 +23,7 @@ languages:
     weight: 2
     params:
       footer: |
-        Un projet de la ville de Bienne
+        Un projet de la ville de Bienne / Christine Schranz
 
 disableKinds:
   - taxonomy

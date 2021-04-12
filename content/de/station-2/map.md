@@ -1,6 +1,6 @@
 ---
-title: Karte
-weight: 2
+title: Nächste
+weight: 4
 ---
 
 General-Dufour-Strasse 22, Schulhaus
