@@ -1,5 +1,8 @@
 {{ define "main" }}
-{{ partial "breadcrumb" . }}
+
+{{ with .Params.banner }}
+    <img src="{{ . }}" >
+{{ end }}
 
 <div class="title">
     <h1 class="h1">
@@ -31,6 +34,13 @@
 </div>
 
 <div class="content">
+
+    {{ with .Params.audio }}
+    <audio controls src="{{ . }}">
+        Votre navigateur ne lit pas ce type de fichier.
+    </audio>
+    {{ end }}
+
     {{ .Content }}
 </div>
 

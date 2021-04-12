@@ -1,0 +1,29 @@
+/*!------------------------------------------------------------------
+[MAIN STYLESHEET]
+PROJECT: Robert Walser
+VERSION: 0.0.1
+-------------------------------------------------------------------*//*!------------------------------------------------------------------
+[VARIABLES STYLESHEET]
+PROJECT: Robert Walser
+VERSION: 0.0.1
+-------------------------------------------------------------------*//*!------------------------------------------------------------------
+[TYPOGRAPHIE STYLESHEET]
+PROJECT: Robert Walser
+VERSION: 0.0.1
+-------------------------------------------------------------------*/p{margin-top:0;margin-bottom:1rem}.h1,.h2,.h3,.h4,.h5,.h6,h1,h2,h3,h4,h5,h6{margin-bottom:.5rem;font-family:inherit;font-weight:500;line-height:1.2;color:inherit}.h1,h1{font-size:2.5em;text-align:left;color:var(#DD4799);font-weight:700}.h2,h2{font-size:1.25em;font-weight:400}.h3,h3{font-size:1.25em;font-weight:700}.h4,h4{font-size:1em;font-weight:700}.h5,h5{font-size:1em;font-weight:400}.h6,h6{font-size:1rem;font-weight:300}html{background:#fff;color:#dd4799;font-family:bodoni moda,serif;font-size:1em;line-height:1.2;overflow-y:scroll}body{margin:0 auto;max-width:70ch;font-size:1rem;font-weight:400;line-height:1.5;text-align:left}header,.header{font-size:1em;padding:.3em 1em;color:#fff;background-color:#dd4799;font-weight:400}footer,.footer{background:#fff;padding:.3em 1.5em}iframe{max-width:100%}figure{margin:2rem 0}img{display:block;margin:auto;max-width:100%}/*!------------------------------------------------------------------
+[BUTTONS STYLESHEET]
+PROJECT: Robert Walser
+VERSION: 0.0.1
+-------------------------------------------------------------------*/.btn{display:inline-block;font-weight:400;text-align:center;white-space:nowrap;vertical-align:middle;user-select:none;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;border:1px solid transparent}.btn-primary{color:var(#DD4799)}.btn-primary:hover{color:var(rgba(221,71,153,.2))}.btn-secondary{color:var(#DD4799)}.btn-secondary:hover{color:var(rgba(221,71,153,.2))}/*!------------------------------------------------------------------
+[BREADCRUMB STYLESHEET]
+PROJECT: Robert Walser
+VERSION: 0.0.1
+-------------------------------------------------------------------*/.breadcrumb{font-weight:400;text-transform:uppercase;color:#000;margin:.5em 0;padding:.3em 1.5em;font-size:.75em}.breadcrumb a{text-decoration:none}.breadcrumb a:hover{color:#000}.breadcrumb .breadcrumb-separator{color:#dd4799;font-weight:300}.breadcrumb .breadcrumb-item{font-weight:300;text-decoration:none;color:#dd4799}.breadcrumb .breadcrumb-item.active{font-weight:700}/*!------------------------------------------------------------------
+[LANGUAGE-SELECTOR STYLESHEET]
+PROJECT: Robert Walser
+VERSION: 0.0.1
+-------------------------------------------------------------------*/.language-selector{padding:.3em 1em}.language-selector .main .lang{display:flex;flex-direction:row;margin:0;padding:0;font-size:.75em}.language-selector .main .lang .lang-item{list-style-type:none;flex-grow:5;margin:0;text-align:center;background-color:#c9c5d1;border-radius:20px;margin:.5em;border-width:2px}.language-selector .main .lang .lang-item .lang-item-text{padding:.5em;color:#fff;text-transform:uppercase}.language-selector .main .lang .lang-item.active{background-color:#dd4799}.language-selector .main .lang .lang-item.active .lang-item-text{color:#fff}.language-selector .main .lang .lang-item:hover{background-color:rgba(221,71,153,.2)}.language-selector .main .lang .lang-item:hover .lang-item-text{color:#dd4799}.language-selector a{text-decoration:none}/*!------------------------------------------------------------------
+[TAB-SELECTOR STYLESHEET]
+PROJECT: Robert Walser
+VERSION: 0.0.1
+-------------------------------------------------------------------*/.tabs-selector{padding:0 1.5em;margin-bottom:.5em}.tabs-selector .tabs{display:flex;flex-direction:row;flex-wrap:wrap;margin:0;padding:0}.tabs-selector .tabs-item{flex-grow:3;margin:2px;margin-bottom:.5em;text-transform:uppercase;list-style-type:none}.tabs-selector .tabs-item .tabs-item-text{color:#fff;padding:.5em 1em;border-color:#dd4799;border-width:2px;border-radius:20px;text-align:center;background-color:#dd4799;font-size:.75em}.tabs-selector .tabs-item.active .tabs-item-text{background-color:rgba(221,71,153,.2);color:#dd4799}.tabs-selector .tabs-item:hover .tabs-item-text{background-color:rgba(221,71,153,.2);color:#dd4799}.tabs-selector a{text-decoration:none}.title{padding:.5em 1.5em}.content{background-color:rgba(221,71,153,.2);padding:.5em 1.5em}header{display:flex;flex-direction:row;justify-content:space-between}header a{color:#fff;text-decoration:none}audio{width:100%}

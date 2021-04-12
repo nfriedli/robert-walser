@@ -17,6 +17,9 @@
     {{/* La feuille de style dans assets est minifiée et le nom de fichier dispose d'un hash */}}
     {{ $styles := resources.Get "scss/main.scss" | toCSS | minify | fingerprint }}
     <link rel="stylesheet" href="{{ $styles.Permalink }}" integrity="{{ $styles.Data.Integrity }}" media="screen">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -25,27 +28,19 @@
             {{ .Site.Title }}
         </span>
         <span>
-            iconHome
+            {{ $lang := .Language}}
+            {{ if .Translations }}
+            {{ range .AllTranslations }}
+            {{ if ne $lang .Language }}
+                <a href="{{ .Permalink }}" title="{{ .Title }}" hreflang="{{ .Language.Lang }}">
+                        {{ .Language.LanguageName }}
+                </a>
+            {{ end }}
+            {{ end }}
+            {{ end }}
         </span>
     </header>
-    <section class="language-selector">
-        {{ $lang := .Language}}
-        <nav class="main">
-            <ul class="lang">
-                {{ if .Translations }}
-                    {{ range .AllTranslations }}
-                        <li class="lang-item {{ if eq $lang .Language }} active{{end}}">
-                            <a href="{{ .Permalink }}" title="{{ .Title }}" hreflang="{{ .Language.Lang }}">
-                                <div class="lang-item-text" >
-                                    {{ .Language.LanguageName }}
-                                </div>
-                            </a>
-                        </li>
-                    {{ end}}
-                {{ end }}
-            </ul>
-        </nav>
-    </section>
+
     <main>
         {{ block "main" . }}{{ end }}
     </main>

@@ -25,3 +25,19 @@ VERSION:	0.0.1
 
 @import 'content';
 
+/* Hacks pour inauguration */
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+header a {
+    color: #FFF;
+    text-decoration: none;
+}
+
+audio {
+    width: 100%;
+}
