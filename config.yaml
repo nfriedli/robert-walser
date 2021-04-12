@@ -1,5 +1,7 @@
-baseURL: https://robert-walser.netlify.app/
+baseURL: https://nfriedli.github.io/robert-walser/
 title: Balade Robert Walser
+
+publishDir: docs
 
 defaultContentLanguage: fr
 defaultContentLanguageInSubdir: true
