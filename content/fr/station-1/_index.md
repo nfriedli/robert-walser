@@ -1,5 +1,5 @@
 ---
-title: La chambre d'enfants
+title: "1. La chambre d'enfants"
 banner: /img/1.jpg
 audio: /audio/fr/1.mp3
 ---

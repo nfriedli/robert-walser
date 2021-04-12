@@ -1,6 +1,7 @@
 ---
-title: Feuchte Hände
-banner: /img/1.jpg
+title: "2. Feuchte Hände"
+audio: /audio/fr/2.mp3
+banner: /img/2.jpg
 ---
 
 Aus: *Geschwister Tanner*

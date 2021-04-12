@@ -1,5 +1,6 @@
 ---
-title: Kinderstube
+title: "1. Kinderstube"
+audio: /audio/de/1.mp3
 banner: /img/1.jpg
 ---
 

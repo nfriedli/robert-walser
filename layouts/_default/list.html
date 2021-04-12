@@ -14,21 +14,25 @@
 
 <div class="tabs-selector">
     <ul class="tabs">
+        {{ if ne $current . }}
         <li class="tabs-item {{ if eq $current . }}active{{ end }}">
             <a href="{{ .Permalink }}">
                 <div class="tabs-item-text">
-                    {{ .Title | markdownify }}
+                    {{ .Title }}
                 </div>
             </a>
         </li>
+        {{ end }}
         {{ range .Pages }}
+            {{ if ne $current . }}
             <li class="tabs-item {{ if eq $current . }}active{{ end }}">
                 <a href="{{ .Permalink }}">
                     <div class="tabs-item-text">
-                       {{ .Title | markdownify }}
+                       {{ .Title }}
                     </div>
                 </a>
             </li>
+            {{ end }}
         {{ end }}
     </ul>
 </div>
