@@ -1,6 +1,7 @@
 baseURL: https://nfriedli.github.io/robert-walser/
 title: Balade Robert Walser
 
+canonifyURLs: true
 publishDir: docs
 
 defaultContentLanguage: fr
