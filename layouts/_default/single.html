@@ -1,5 +1,9 @@
 {{ define "main" }}
-<h1 class="h1">{{ .Title }}</h1>
+<div class="title">
+    <h1 class="h1">
+        {{ .Title }}
+    </h1>
+</div>
 
 {{ $current := .}}
 
@@ -26,7 +30,9 @@
 </div>
 {{ end }}
 
-{{ .Content }}
+<div class="content">
+    {{ .Content }}
+</div>
 
 {{ with .Params.next }}
 <div class="next">
