@@ -1,6 +1,7 @@
 ---
 title: "2. Les mains moites"
-banner: /img/2.jpg
+cascade:
+    banner: /img/2.jpg
 audio: /audio/fr/2.mp3
 ---
 

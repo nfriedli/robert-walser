@@ -4,12 +4,6 @@
     <img src="{{ . }}" >
 {{ end }}
 
-<div class="title">
-    <h1 class="h1">
-        {{ .Title }}
-    </h1>
-</div>
-
 {{ $current := .}}
 
 <div class="tabs-selector">
@@ -35,6 +29,12 @@
             {{ end }}
         {{ end }}
     </ul>
+</div>
+
+<div class="title">
+    <h1 class="h1">
+        {{ .Title }}
+    </h1>
 </div>
 
 <div class="content">
