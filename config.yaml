@@ -10,20 +10,20 @@ defaultContentLanguageInSubdir: true
 languages:
   de:
     contentDir: content/de
-    title: Robert Walser in Biel
+    title: Robert Walsers Biel
     languageName: Deutsch
     weight: 1
     params:
       footer: |
-        Eine Projekt von Stadt Biel / Christine Schranz
+        © Christine Schranz
   fr:
     contentDir: content/fr
-    title: Robert Walser à Bienne
+    title: Bienne vue par Robert Walser
     languageName: Français
     weight: 2
     params:
       footer: |
-        Un projet de la ville de Bienne / Christine Schranz
+        © Christine Schranz
 
 disableKinds:
   - taxonomy
